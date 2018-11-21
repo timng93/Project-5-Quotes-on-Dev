@@ -33,7 +33,7 @@ a {
 	width: 100%;
 
 	ul {
-		display: none;
+		//display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -96,6 +96,7 @@ a {
 }
 
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -130,3 +131,4 @@ a {
 		width: 50%;
 	}
 }
+

@@ -221,6 +221,13 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-Light.eot");
+  src: url("../../assets/fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-Light.woff2") format("woff2"), url("../../assets/fonts/Exo-Light.woff") format("woff"), url("../../assets/fonts/Exo-Light.ttf") format("truetype"), url("../../assets/fonts/Exo-Light.svg#Exo-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -292,7 +299,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #222222;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
@@ -349,16 +356,11 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
   background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
   font-size: .75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6rem 1rem .4rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -428,7 +430,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -570,6 +571,51 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+body {
+  background-color: #222222;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Exo'; }
+
+.site-branding {
+  text-align: left;
+  padding: 1rem;
+  background-color: #222222;
+  font-size: 1rem; }
+  .site-branding p {
+    display: none; }
+
+h2.entry-title {
+  font-weight: normal;
+  font-size: 1.5rem; }
+
+i.fas, span.source {
+  display: none; }
+
+button {
+  background-color: #222222;
+  color: #00cc00;
+  border-color: #00cc00;
+  width: 40%;
+  padding: 1rem;
+  margin-left: 1rem; }
+
+.main-navigation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .main-navigation ul li {
+    padding-right: 1rem;
+    border-right: 1px solid #ffffff; }
+    .main-navigation ul li a {
+      display: inline-block;
+      text-decoration: none;
+      color: green; }
 
 /*--------------------------------------------------------------
 # Media

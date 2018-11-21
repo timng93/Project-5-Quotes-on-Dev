@@ -1,3 +1,15 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+    font-family: 'Exo';
+    src: url('../../assets/fonts/Exo-Light.eot');
+    src: url('../../assets/fonts/Exo-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Exo-Light.woff2') format('woff2'),
+        url('../../assets/fonts/Exo-Light.woff') format('woff'),
+        url('../../assets/fonts/Exo-Light.ttf') format('truetype'),
+        url('../../assets/fonts/Exo-Light.svg#Exo-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
