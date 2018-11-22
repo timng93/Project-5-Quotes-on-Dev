@@ -55,10 +55,15 @@ body {
 
   h2.entry-title {
     font-weight: normal;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	margin: 0;
   }
 
+  .page-template-default .entry-header{
+	text-align: left;
+    padding-left: 1rem;
+  }
+  
   span.source a {
     color: $color__text-brand;
     font-style: italic;
@@ -76,11 +81,13 @@ span.source{
     background-color: $color__background-body;
     color: $color__text-brand;
     border-color: $color__text-brand;
-    width: 50%;
-    padding: 1rem;
+    width: 35%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
     margin-left: 1rem;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+	margin-bottom: 3rem;
+	font-size: 1rem;
   }
 
   .main-navigation , .post-archives, .category-archives, .tag-archives{
@@ -89,9 +96,7 @@ span.source{
     padding-right: 1rem;
     border-right: 1px solid #ffffff;
     display: inline-block;
-    &:last-child {
-      border-right: none;
-    }
+    
     a {
       display: inline-block;
       text-decoration: none;
@@ -149,13 +154,25 @@ span.source{
 	  display: none;
   }
 
-  .entry-content p {
+  .entry-content {p {
 	  line-height: 3rem;
+	  font-size: 1.2rem;
     @media screen and (min-width: $break-large) {
-	  font-size: 2rem;
+	  font-size: 1.7rem;
 	  text-align:left;
-    }
+	}
+}    a{
+	display: inline-block;
+      text-decoration: none;
+      color: $color__text-brand;
+}
   }
+
+  .page-template-default .entry-content p{
+	  font-size: 1.2rem;
+  }
+
+
 
   .entry-meta{
 	  display: flex;
@@ -189,6 +206,8 @@ span.source{
   }
 }
 
+
+
 img{
 	width: 60%;
 }
@@ -202,4 +221,8 @@ img{
 	text-align: center;
 }
 };
+
+.nav-links{
+	display: none;
+}
 
