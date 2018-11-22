@@ -16,13 +16,17 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
+<div class="single-post">
+<div class="icon-left">
 <i class="fas fa-quote-left"></i>
+</div>
+    <div class="entry-post">
 	<div class="entry-content">
 		<?php the_content(); ?>
-
 	</div>
-	<i class="fas fa-quote-right"></i>	<!-- .entry-content -->
+
+	
+		<!-- .entry-content -->
 
 	<div class="entry-meta">
 		<?php the_title( '<h2 class="entry-title">&mdash; ', '</h2>'); ?>
@@ -42,14 +46,20 @@
 <?php endif; ?>
 
 
-	</div><!-- .entry-meta -->
+	</div>
+</div><!-- .entry-meta -->
 
+	<div class="icon-right">
+	<i class="fas fa-quote-right"></i>
+</div>
+</div>
 </article><!-- #post-## -->
 
 <?php 
 
 if( is_home() || is_single() ): ?>
 
+<div class="button">
 <button type="button" id="new-quote-button">Show Me Another!</button>
-
+</div>
 <?php endif;?>

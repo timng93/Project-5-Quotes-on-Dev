@@ -8,6 +8,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="single-post">
+<div class="icon-left">
+<i class="fas fa-quote-left"></i>
+</div>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
@@ -20,5 +24,9 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div>
+	<div class="icon-right">
+	<i class="fas fa-quote-right"></i>
+</div>
+			</div><!-- .entry-content -->
 </article><!-- #post-## -->

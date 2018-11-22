@@ -341,7 +341,8 @@ img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */ }
+  /* Adhere to container width. */
+  padding: 1rem; }
 
 table {
   margin: 0 0 1.5rem;
@@ -414,8 +415,6 @@ textarea {
 /* Links */
 a {
   color: royalblue; }
-  a:visited {
-    color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -427,7 +426,6 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%; }
   .main-navigation ul {
     list-style: none;
@@ -574,48 +572,152 @@ a {
 
 body {
   background-color: #222222;
-  color: white;
-  font-size: 2rem;
-  font-family: 'Exo'; }
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Exo';
+  line-height: 1.5rem; }
 
 .site-branding {
   text-align: left;
   padding: 1rem;
   background-color: #222222;
   font-size: 1rem; }
-  .site-branding p {
-    display: none; }
+  @media screen and (min-width: 1080px) {
+    .site-branding {
+      text-align: center; }
+      .site-branding p {
+        display: none; } }
 
 h2.entry-title {
   font-weight: normal;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin: 0; }
 
-i.fas, span.source {
-  display: none; }
+span.source a {
+  color: #00cc00;
+  font-style: italic;
+  text-decoration: none; }
+
+span.source {
+  position: relative;
+  left: 1rem;
+  font-style: italic; }
 
 button {
   background-color: #222222;
   color: #00cc00;
   border-color: #00cc00;
-  width: 40%;
+  width: 50%;
   padding: 1rem;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
-.main-navigation {
-  width: 100%;
+.main-navigation ul li, .post-archives ul li, .category-archives ul li, .tag-archives ul li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid #ffffff;
+  display: inline-block; }
+  .main-navigation ul li:last-child, .post-archives ul li:last-child, .category-archives ul li:last-child, .tag-archives ul li:last-child {
+    border-right: none; }
+  .main-navigation ul li a, .post-archives ul li a, .category-archives ul li a, .tag-archives ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #00cc00; }
+
+.post-archives ul li, .category-archives ul li, .tag-archives ul li {
+  border: none;
+  padding-left: 0; }
+
+h4.copy-right {
+  position: relative;
+  left: 4%; }
+  @media screen and (min-width: 600px) {
+    h4.copy-right {
+      margin: 0; } }
+
+span.link-page {
+  text-decoration: none;
+  color: #00cc00; }
+
+article {
+  padding-left: 1rem; }
+
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .main-navigation ul li {
-    padding-right: 1rem;
-    border-right: 1px solid #ffffff; }
-    .main-navigation ul li a {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (min-width: 600px) {
+    .footer {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  @media screen and (min-width: 1080px) {
+    .footer {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+
+i.fas {
+  display: none; }
+  @media screen and (min-width: 1080px) {
+    i.fas {
       display: inline-block;
-      text-decoration: none;
-      color: green; }
+      font-size: 7rem;
+      color: #00cc00; } }
+
+.site-description {
+  display: none; }
+
+.entry-content p {
+  line-height: 3rem; }
+  @media screen and (min-width: 1080px) {
+    .entry-content p {
+      font-size: 2rem;
+      text-align: left; } }
+
+.entry-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media screen and (min-width: 1080px) {
+    .entry-meta {
+      text-align: left; } }
+
+@media screen and (min-width: 1080px) {
+  .entry-post {
+    padding-left: 3rem;
+    padding-right: 3rem; } }
+
+.single-post {
+  display: inline-block; }
+  @media screen and (min-width: 600px) {
+    .single-post {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: left; } }
+  @media screen and (min-width: 1080px) {
+    .single-post {
+      text-align: center;
+      margin-left: 4rem;
+      margin-right: 4rem; } }
+
+img {
+  width: 60%; }
+
+@media screen and (min-width: 600px) {
+  .button {
+    text-align: left; } }
+
+@media screen and (min-width: 1080px) {
+  .button {
+    text-align: center; } }
 
 /*--------------------------------------------------------------
 # Media

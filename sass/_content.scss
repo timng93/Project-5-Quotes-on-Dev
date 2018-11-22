@@ -5,81 +5,201 @@
 /* Posts and pages */
 
 .sticky {
-	display: block;
+  display: block;
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published){
-	display: none;
+.updated:not(.published) {
+  display: none;
 }
 
 .single .byline,
 .group-blog .byline {
-	display: inline;
+  display: inline;
 }
 
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: $base__space-unit 0 0;
+  margin: $base__space-unit 0 0;
 }
 
 .page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
+  clear: both;
+  margin: 0 0 $base__space-unit;
 }
 
-body{
-	background-color: $color__background-body;
-	color: white;
-	font-size: 2rem;
-	font-family: 'Exo';
+body {
+  background-color: $color__background-body;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Exo';
+  line-height: 1.5rem;
 }
 
-.site-branding{
-	text-align: left;
-	padding: 1rem;
-	background-color: $color__background-body;
-	font-size: 1rem;
-	
-	p{
-		display: none;
-	}
+.site-branding {
+  text-align: left;
+  padding: 1rem;
+  background-color: $color__background-body;
+  font-size: 1rem;
+  @media screen and (min-width: $break-large) {
+    text-align: center;
+    p {
+      display: none;
+    }
+  }
 }
 
-h2.entry-title{
-	font-weight: normal;
+  h2.entry-title {
+    font-weight: normal;
 	font-size: 1.5rem;
-}
+	margin: 0;
+  }
 
-i.fas, span.source{
-	display: none;
-}
-
-button{
-	background-color: $color__background-body;
+  span.source a {
     color: $color__text-brand;
-	border-color: $color__text-brand;
-	width: 40%;
+    font-style: italic;
+	text-decoration: none;
+}
+
+span.source{
+	position: relative;
+    left: 1rem;
+    font-style: italic;
+}
+  
+
+  button {
+    background-color: $color__background-body;
+    color: $color__text-brand;
+    border-color: $color__text-brand;
+    width: 50%;
     padding: 1rem;
     margin-left: 1rem;
-}
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 
-.main-navigation{
-	width: 100%;
-	display: flex;
-	justify-content: center;	
-	ul li{
-		padding-right: 1rem;
-		border-right: 1px solid #ffffff;
-		 a {
+  .main-navigation , .post-archives, .category-archives, .tag-archives{
+	  ul li{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid #ffffff;
     display: inline-block;
-    text-decoration: none;
-	color: green;
-	
-}
+    &:last-child {
+      border-right: none;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: $color__text-brand;
 	}
 }
+  }
+
+  .post-archives, .category-archives, .tag-archives{
+	ul li{
+		border: none;
+		padding-left:0;
+	}
+}
+
+  h4.copy-right {
+    position: relative;
+    left: 4%;
+    @media screen and (min-width: $break-small) {
+      margin: 0;
+    }
+  }
+
+  span.link-page {
+    text-decoration: none;
+    color: $color__text-brand;
+  }
+
+  article {
+    padding-left: 1rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $break-small) {
+      flex-direction: row;
+    }
+    @media screen and (min-width: $break-large) {
+      justify-content: flex-end;
+    }
+  }
+
+  i.fas {
+	  display: none;
+	
+    @media screen and (min-width: $break-large) {
+		display: inline-block;
+      font-size: 7rem;
+      color: $color__text-brand;
+    }
+  }
+
+  .site-description {
+	  display: none;
+  }
+
+  .entry-content p {
+	  line-height: 3rem;
+    @media screen and (min-width: $break-large) {
+	  font-size: 2rem;
+	  text-align:left;
+    }
+  }
+
+  .entry-meta{
+	  display: flex;
+	@media screen and (min-width: $break-large) {
+		text-align: left;
+
+  }
+}
+
+
+  .entry-post{
+	@media screen and (min-width: $break-large) {
+	padding-left: 3rem;
+	padding-right: 3rem;
+	}
+}
+  
+  
+
+.single-post {
+  display: inline-block;
+  @media screen and (min-width: $break-small) {
+    display: flex;
+    text-align: left;
+  }
+  @media screen and (min-width: $break-large) {
+	text-align: center;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	
+  }
+}
+
+img{
+	width: 60%;
+}
+
+.button{
+	@media screen and (min-width: $break-small) {
+		text-align: left;	
+	}
+
+@media screen and (min-width: $break-large) {
+	text-align: center;
+}
+};
+
