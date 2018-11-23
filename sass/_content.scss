@@ -86,8 +86,10 @@ span.source{
     margin-left: 1rem;
     margin-top: 3rem;
 	margin-bottom: 3rem;
-	font-size: 1rem;
+  font-size: 1rem;
   }
+
+  
 
   input, textarea{
     background-color: $color__background-body;
@@ -109,6 +111,15 @@ span.source{
       color: $color__text-brand;
 	}
 }
+  }
+
+  .main-navigation {
+	  ul li:last-child{
+      border: none;
+    @media screen and (min-width: $break-small) {
+      border-right: 1px solid #ffffff;
+    }
+  }
   }
 
   .post-archives, .category-archives, .tag-archives{
@@ -138,11 +149,13 @@ span.source{
   .footer {
     display: flex;
     flex-direction: column;
+    padding-bottom: 4rem;
     @media screen and (min-width: $break-small) {
       flex-direction: row;
     }
     @media screen and (min-width: $break-large) {
       justify-content: flex-end;
+      margin-right: 6rem;
     }
   }
 
@@ -227,7 +240,7 @@ span.source{
   @media screen and (min-width: $break-large) {
 	text-align: center;
 	margin-left: 4rem;
-	margin-right: 4rem;
+	margin-right: 5rem;
 	
   }
 }
@@ -274,4 +287,52 @@ form{
 	margin-left: 5rem;
     margin-right: 5rem;
   }
+}
+
+
+.page-id-210 {
+  .entry-header, .post-archives h2, ul{
+    margin:0;
+    padding: 0;
+  }
+}
+
+.page-id-210 .entry-content{
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  @media screen and (min-width: $break-large) {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  }
+  a{
+  padding-top: 0.5rem;
+  font-size: 1.25rem !important;
+  } 
+}
+
+.page-id-210 .navigation-menu{
+  padding-left: 1rem;
+}
+
+.page-id-210 h4.copy-right{
+  left:0;
+  padding-left: 2rem
+}
+
+
+
+.page-id-210 .post-archives h2{
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.page-id-210 .single-post{
+  margin-left: 0;
+  margin-right: 0;
+  @media screen and (min-width: $break-large) {
+
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
 }

@@ -125,8 +125,11 @@
                 //append success message
 
                }).fail(function(){
+                 
+                console.log('fail');
 
-                console.log('something went wrong');
+                $( "#quote-submission-form" ).slideUp( "slow");
+
                 $('.quote-submission-wrapper').append(`<h3> Oops! You want to submit your quote again? </h3>`);
 
 
