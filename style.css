@@ -369,16 +369,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
   border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
 
 input[type="text"],
 input[type="email"],
@@ -575,7 +566,7 @@ h2.entry-title {
   font-size: 1.2rem;
   margin: 0; }
 
-.page-template-default .entry-header {
+.page-template-default .entry-header, .error404 h1.page-title {
   text-align: left;
   padding-left: 1rem; }
 
@@ -598,6 +589,11 @@ button, input.submit-quote {
   margin-top: 3rem;
   margin-bottom: 3rem;
   font-size: 1rem; }
+
+input, textarea {
+  background-color: #222222;
+  color: #00cc00;
+  border-color: #00cc00; }
 
 .main-navigation ul li, .post-archives ul li, .category-archives ul li, .tag-archives ul li {
   padding-left: 1rem;
@@ -655,6 +651,9 @@ i.fas {
       font-size: 7rem;
       color: #00cc00; } }
 
+i.fa-search {
+  font-size: 1rem; }
+
 .site-description {
   display: none; }
 
@@ -664,6 +663,7 @@ i.fas {
   @media screen and (min-width: 1080px) {
     .entry-content p {
       font-size: 1.7rem;
+      width: 100vh;
       text-align: left; } }
 
 .entry-content a {
@@ -671,8 +671,19 @@ i.fas {
   text-decoration: none;
   color: #00cc00; }
 
+.error404 .page-content p {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0; }
+
+fieldset {
+  border: none; }
+
 .page-template-default .entry-content p {
   font-size: 1.2rem; }
+
+.page-id-210 .entry-content {
+  text-align: left; }
 
 .entry-meta {
   display: -webkit-box;
@@ -718,17 +729,26 @@ img {
 form {
   text-align: left; }
 
-.page-template-default .single-post {
+.page-id-220 .single-post, .error404 .single-post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start; }
+  @media screen and (min-width: 1080px) {
+    .page-id-220 .single-post, .error404 .single-post {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
-.page-template-default .entry-content {
-  margin-left: 5rem;
-  margin-right: 5rem; }
+.page-id-220 .entry-content {
+  margin-left: 2rem;
+  width: 70vh; }
+  @media screen and (min-width: 1080px) {
+    .page-id-220 .entry-content {
+      margin-left: 5rem;
+      margin-right: 5rem; } }
 
 /*--------------------------------------------------------------
 # Media

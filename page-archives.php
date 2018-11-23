@@ -11,7 +11,11 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<section class="browse-archives">
-
+        <div class="single-post">
+<div class="icon-left">
+<i class="fas fa-quote-left"></i>
+</div>
+        <div class="entry-content">
         <header class="entry-header">
 
         <?php the_title( '<h1 class="entry-title">', '</h1>'); ?>
@@ -63,8 +67,11 @@ get_header(); ?>
         ) );
 
         ?>
-
-
+        </div>
+        </div>
+        <div class="icon-right">
+	<i class="fas fa-quote-right"></i>
+</div>
         </section>
 
 		</main><!-- #main -->

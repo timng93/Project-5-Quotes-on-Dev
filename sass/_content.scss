@@ -53,13 +53,13 @@ body {
   }
 }
 
-  h2.entry-title {
+  h2.entry-title{
     font-weight: normal;
 	font-size: 1.2rem;
 	margin: 0;
   }
 
-  .page-template-default .entry-header{
+  .page-template-default .entry-header, .error404 h1.page-title{
 	text-align: left;
     padding-left: 1rem;
   }
@@ -87,6 +87,13 @@ span.source{
     margin-top: 3rem;
 	margin-bottom: 3rem;
 	font-size: 1rem;
+  }
+
+  input, textarea{
+    background-color: $color__background-body;
+    color: $color__text-brand;
+    border-color: $color__text-brand;
+
   }
 
   .main-navigation , .post-archives, .category-archives, .tag-archives{
@@ -149,6 +156,10 @@ span.source{
     }
   }
 
+  i.fa-search{
+    font-size: 1rem;
+  }
+
   .site-description {
 	  display: none;
   }
@@ -157,7 +168,8 @@ span.source{
 	  line-height: 3rem;
 	  font-size: 1.2rem;
     @media screen and (min-width: $break-large) {
-	  font-size: 1.7rem;
+    font-size: 1.7rem;
+    width: 100vh;
 	  text-align:left;
 	}
 }    a{
@@ -167,8 +179,23 @@ span.source{
 }
   }
 
+  .error404 .page-content p{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+
+  }
+
+  fieldset{
+    border: none;
+  }
+
   .page-template-default .entry-content p{
 	  font-size: 1.2rem;
+  }
+
+  .page-id-210 .entry-content{
+    text-align: left;
   }
 
 
@@ -229,12 +256,22 @@ form{
 	text-align: left;
 }
 
-.page-template-default .single-post{
-	display: flex;
-	justify-content: center;
+.page-id-220, .error404{
+   .single-post{
+  display: flex;
+  justify-content: start;
+  @media screen and (min-width: $break-large) {
+    justify-content: center;
+  }
+}
 }
 
-.page-template-default .entry-content{
+.page-id-220 .entry-content{
+  margin-left: 2rem;
+  width: 70vh;
+
+  @media screen and (min-width: $break-large) {
 	margin-left: 5rem;
     margin-right: 5rem;
+  }
 }

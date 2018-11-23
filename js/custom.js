@@ -101,7 +101,7 @@
                   content: quoteContent,
                   _qod_quote_source: quoteSource,
                   _qod_quote_source_url: quoteURL,
-                  status: publish,
+                  status: 'publish',
 
                  
 
