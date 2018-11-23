@@ -585,11 +585,9 @@ span.source a {
   text-decoration: none; }
 
 span.source {
-  position: relative;
-  left: 1rem;
   font-style: italic; }
 
-button {
+button, input.submit-quote {
   background-color: #222222;
   color: #00cc00;
   border-color: #00cc00;
@@ -716,6 +714,21 @@ img {
 
 .nav-links {
   display: none; }
+
+form {
+  text-align: left; }
+
+.page-template-default .single-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-template-default .entry-content {
+  margin-left: 5rem;
+  margin-right: 5rem; }
 
 /*--------------------------------------------------------------
 # Media

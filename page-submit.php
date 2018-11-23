@@ -15,7 +15,7 @@ get_header(); ?>
 <div class="icon-left">
 <i class="fas fa-quote-left"></i>
 </div>
-
+                <div class="entry-content">
                 <header class="entry-header">
 
                 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -28,13 +28,16 @@ get_header(); ?>
                     <form name="quoteForm" id="quote-submission-form">
 
                         <div>
-                     <label for = ""> Author of Quote </label>
+                     <label for = "quote-author"> Author of Quote </label>
+</div>
+                         <div>
                      <input type="text" name="quote_author" id="quote-author">
                         </div>
 
                         <div>
                     <label for = "quote-content"> Quote </label>
-                    
+</div>
+                        <div>
                     <textarea name="quote_content" id="quote-content" rows="3" columns="20"></textarea>
 
                        </div>
@@ -42,23 +45,29 @@ get_header(); ?>
                        <div>
                     <label for="">Where did you find this quote? (e.g. book name)
 </label>
+</div>
+                  <div>
         <input type="text" name="quote_source" id="quote-source">
 
                        </div>
 
                        <div>
                     <label for="">Provide the URL of the quote source, if available. </label>
-
+</div>
+                    <div>
                     <input type="url" name="quote_source_url" id="quote-source-url">
 
 
                       </div>
-
-                      <input type="submit" value="Submit Quote">
-
+                     <div>
+                   <input class="submit-quote" type="submit" value="Submit Quote"> 
+</div>
                     </form>
 
-                </div><!--quote-submission-wrapper -->
+                </div>
+</div>
+
+<!--quote-submission-wrapper -->
 
                 <?php else: ?>
 

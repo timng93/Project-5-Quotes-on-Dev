@@ -63,7 +63,7 @@ body {
 	text-align: left;
     padding-left: 1rem;
   }
-  
+
   span.source a {
     color: $color__text-brand;
     font-style: italic;
@@ -71,13 +71,12 @@ body {
 }
 
 span.source{
-	position: relative;
-    left: 1rem;
+
     font-style: italic;
 }
   
 
-  button {
+  button, input.submit-quote {
     background-color: $color__background-body;
     color: $color__text-brand;
     border-color: $color__text-brand;
@@ -226,3 +225,16 @@ img{
 	display: none;
 }
 
+form{
+	text-align: left;
+}
+
+.page-template-default .single-post{
+	display: flex;
+	justify-content: center;
+}
+
+.page-template-default .entry-content{
+	margin-left: 5rem;
+    margin-right: 5rem;
+}

@@ -38,9 +38,14 @@
           $('.entry-title').append(`&mdash; ${data[0].title.rendered}`);
 
           if (data[0]._qod_quote_source_url.length > 0) {
-            $('.source').append(` <a href="${data[0]._qod_quote_source_url}">${data[0]._qod_quote_source}</a>`);
+            $('.source').append(`, <a href="${data[0]._qod_quote_source_url}">${data[0]._qod_quote_source}</a>`);
+          } else if (data[0]._qod_quote_source.length > 0) {
+        
+            $('.source').append(`, ${data[0]._qod_quote_source}`);
+
           } else {
-            $('.source').append(` ${data[0]._qod_quote_source}`);
+            $('.source').append("");
+
 
           }
 
@@ -96,6 +101,7 @@
                   content: quoteContent,
                   _qod_quote_source: quoteSource,
                   _qod_quote_source_url: quoteURL,
+                  status: publish,
 
                  
 
