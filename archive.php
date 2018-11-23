@@ -9,7 +9,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+        <div class="category-archive">
+		<div class="icon-left">
+<i class="fas fa-quote-left"></i>
+</div>
+		
+        <div class="entry-post">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -22,19 +27,28 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content-archive' );
 				?>
 
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 
+			<?php qod_numbered_pagination(); ?>
+
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+</div>
 
+
+			<div class="icon-right">
+<i class="fas fa-quote-right"></i>
+</div>
+</div>
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

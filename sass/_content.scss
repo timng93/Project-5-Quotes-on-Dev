@@ -171,6 +171,9 @@ span.source{
 
   i.fa-search{
     font-size: 1rem;
+    display: inline-block;
+    color: #0c0;
+
   }
 
   .site-description {
@@ -225,7 +228,7 @@ span.source{
   .entry-post{
 	@media screen and (min-width: $break-large) {
 	padding-left: 3rem;
-	padding-right: 3rem;
+	padding-right: 7rem;
 	}
 }
   
@@ -335,4 +338,69 @@ form{
   margin-left: 10rem;
   margin-right: 10rem;
 }
+}
+
+.category, .tag{
+  .single-post{
+    border-bottom: 1px dashed #ffffff;
+    width: 100%;
+
+  }
+}
+
+.category-archive{
+  display: flex;
+}
+
+
+.category, .tag{
+
+ .single-post{
+  flex-direction: column;
+}
+}
+
+.category, .tag{
+
+  .page-header{
+    position: relative;
+    
+    border-bottom: 1px dashed #ffffff;
+    
+    margin-left: 1rem;
+
+    @media screen and (min-width: $break-large) {
+    left: 5rem;
+    margin-left:0;
+}
+  }
+}
+
+.page-id-208 .footer{
+  padding-left: 1rem;
+}
+
+.page-id-208 .single-post{
+  @media screen and (min-width: $break-large) {
+    margin-left: 7rem;
+    margin-right: 10rem;
+  }
+
+}
+
+.page-id-208 .entry-content{
+  @media screen and (min-width: $break-large) {
+    padding-left: 2rem;
+  }
+}
+
+.quote-submission{
+  display: flex;
+}
+
+.search-results .content-area a{
+
+  text-decoration: none;
+      color: $color__text-brand;
+  
 }

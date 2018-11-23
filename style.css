@@ -660,7 +660,9 @@ i.fas {
       color: #00cc00; } }
 
 i.fa-search {
-  font-size: 1rem; }
+  font-size: 1rem;
+  display: inline-block;
+  color: #0c0; }
 
 .site-description {
   display: none; }
@@ -704,7 +706,7 @@ fieldset {
 @media screen and (min-width: 1080px) {
   .entry-post {
     padding-left: 3rem;
-    padding-right: 3rem; } }
+    padding-right: 7rem; } }
 
 .single-post {
   display: inline-block; }
@@ -791,6 +793,51 @@ form {
     .page-id-210 .single-post {
       margin-left: 10rem;
       margin-right: 10rem; } }
+
+.category .single-post, .tag .single-post {
+  border-bottom: 1px dashed #ffffff;
+  width: 100%; }
+
+.category-archive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.category .single-post, .tag .single-post {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.category .page-header, .tag .page-header {
+  position: relative;
+  border-bottom: 1px dashed #ffffff;
+  margin-left: 1rem; }
+  @media screen and (min-width: 1080px) {
+    .category .page-header, .tag .page-header {
+      left: 5rem;
+      margin-left: 0; } }
+
+.page-id-208 .footer {
+  padding-left: 1rem; }
+
+@media screen and (min-width: 1080px) {
+  .page-id-208 .single-post {
+    margin-left: 7rem;
+    margin-right: 10rem; } }
+
+@media screen and (min-width: 1080px) {
+  .page-id-208 .entry-content {
+    padding-left: 2rem; } }
+
+.quote-submission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.search-results .content-area a {
+  text-decoration: none;
+  color: #00cc00; }
 
 /*--------------------------------------------------------------
 # Media
