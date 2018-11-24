@@ -398,9 +398,42 @@ form{
   display: flex;
 }
 
-.search-results .content-area a{
+.search-results .content-area a, nav.number-pagination a, nav.number-pagination span{
 
   text-decoration: none;
       color: $color__text-brand;
   
+}
+/*
+.category, .tag{
+  .entry-content p {
+    font-size: 1.25rem;
+  }
+  @media screen and (min-width: $break-small) {
+    font-size: 1.75rem;
+  }
+    @media screen and (min-width: $break-small) {
+      font-size: 2.25rem;
+
+}
+}
+*/
+
+.error404 i.fa-search{
+  position: relative;
+    right: 3rem;
+    @media screen and (min-width: $break-large) {
+right: 6rem;
+    }
+}
+
+button.search-submit{
+  color: transparent;
+  border: none;
+}
+
+.error404 fieldset{
+  position: relative;
+    bottom: 4rem;
+    
 }

@@ -386,14 +386,14 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+a:hover, a:focus, a:active {
+  color: midnightblue; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -835,9 +835,38 @@ form {
   display: -ms-flexbox;
   display: flex; }
 
-.search-results .content-area a {
+.search-results .content-area a, nav.number-pagination a, nav.number-pagination span {
   text-decoration: none;
   color: #00cc00; }
+
+/*
+.category, .tag{
+  .entry-content p {
+    font-size: 1.25rem;
+  }
+  @media screen and (min-width: $break-small) {
+    font-size: 1.75rem;
+  }
+    @media screen and (min-width: $break-small) {
+      font-size: 2.25rem;
+
+}
+}
+*/
+.error404 i.fa-search {
+  position: relative;
+  right: 3rem; }
+  @media screen and (min-width: 1080px) {
+    .error404 i.fa-search {
+      right: 6rem; } }
+
+button.search-submit {
+  color: transparent;
+  border: none; }
+
+.error404 fieldset {
+  position: relative;
+  bottom: 4rem; }
 
 /*--------------------------------------------------------------
 # Media
