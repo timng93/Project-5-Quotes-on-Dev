@@ -40,6 +40,10 @@ body {
   line-height: 1.5rem;
 }
 
+a:hover{
+  color: #006600;
+}
+
 .site-branding {
   text-align: left;
   padding: 1rem;
@@ -67,7 +71,11 @@ body {
   span.source a {
     color: $color__text-brand;
     font-style: italic;
-	text-decoration: none;
+  text-decoration: none;
+  &:hover{
+    color: #006600;
+  }
+  
 }
 
 span.source{
@@ -87,6 +95,9 @@ span.source{
     margin-top: 3rem;
 	margin-bottom: 3rem;
   font-size: 1rem;
+   &:hover{
+     color: #006600;
+   }
   }
 
   
@@ -109,6 +120,10 @@ span.source{
       display: inline-block;
       text-decoration: none;
       color: $color__text-brand;
+      &:hover{
+        color: #006600;
+      }
+    
 	}
 }
   }
@@ -137,9 +152,12 @@ span.source{
     }
   }
 
-  span.link-page {
+  h4.copy-right a {
     text-decoration: none;
     color: $color__text-brand;
+    &:hover{
+      color: #006600;
+    }
   }
 
   article {
@@ -192,6 +210,9 @@ span.source{
 	display: inline-block;
       text-decoration: none;
       color: $color__text-brand;
+    &:hover{
+      color: #006600;
+    }
 }
   }
 
@@ -284,13 +305,53 @@ form{
 
 .page-id-220 .entry-content{
   margin-left: 2rem;
-  width: 70vh;
+  width: 66vh;
+  @media screen and (min-width: $break-small) {
+    width: 75vh;
+
 
   @media screen and (min-width: $break-large) {
 	margin-left: 5rem;
     margin-right: 5rem;
+    width: 100vh;
   }
 }
+
+.page-id-220 .entry-header{
+  padding-left: 0;
+}
+
+.page-id-220 .footer{
+  padding-left: 0.1rem;
+
+}
+
+.page-id-220 input{
+  margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.page-id-220 input.submit-quote{
+  margin-bottom: 4rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-left: 0;
+}
+
+.page-id-220 .navigation-menu{
+  padding-left: 1rem;
+}
+
+.page-id-220 h4.copy-right{
+  padding-left: 2rem;
+  left:0;
+  @media screen and (min-width: $break-small) {
+    padding-left: 1rem;
+
+}
+}
+
+
 
 
 .page-id-210 {
@@ -310,7 +371,10 @@ form{
   a{
   padding-top: 0.5rem;
   font-size: 1.25rem !important;
+  &:hover{
+    color: #006600;
   } 
+}
 }
 
 .page-id-210 .navigation-menu{
@@ -402,6 +466,9 @@ form{
 
   text-decoration: none;
       color: $color__text-brand;
+    &:hover{
+      color: #006600;
+    }
   
 }
 /*
@@ -437,3 +504,4 @@ button.search-submit{
     bottom: 4rem;
     
 }
+

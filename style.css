@@ -386,7 +386,7 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a:hover, a:focus, a:active {
+a:focus, a:active {
   color: midnightblue; }
 
 a:focus {
@@ -550,6 +550,9 @@ body {
   font-family: 'Exo';
   line-height: 1.5rem; }
 
+a:hover {
+  color: #006600; }
+
 .site-branding {
   text-align: left;
   padding: 1rem;
@@ -574,6 +577,8 @@ span.source a {
   color: #00cc00;
   font-style: italic;
   text-decoration: none; }
+  span.source a:hover {
+    color: #006600; }
 
 span.source {
   font-style: italic; }
@@ -589,6 +594,8 @@ button, input.submit-quote {
   margin-top: 3rem;
   margin-bottom: 3rem;
   font-size: 1rem; }
+  button:hover, input.submit-quote:hover {
+    color: #006600; }
 
 input, textarea {
   background-color: #222222;
@@ -604,6 +611,8 @@ input, textarea {
     display: inline-block;
     text-decoration: none;
     color: #00cc00; }
+    .main-navigation ul li a:hover, .post-archives ul li a:hover, .category-archives ul li a:hover, .tag-archives ul li a:hover {
+      color: #006600; }
 
 .main-navigation ul li:last-child {
   border: none; }
@@ -622,9 +631,11 @@ h4.copy-right {
     h4.copy-right {
       margin: 0; } }
 
-span.link-page {
+h4.copy-right a {
   text-decoration: none;
   color: #00cc00; }
+  h4.copy-right a:hover {
+    color: #006600; }
 
 article {
   padding-left: 1rem; }
@@ -680,6 +691,8 @@ i.fa-search {
   display: inline-block;
   text-decoration: none;
   color: #00cc00; }
+  .entry-content a:hover {
+    color: #006600; }
 
 .error404 .page-content p {
   font-size: 1rem;
@@ -754,11 +767,37 @@ form {
 
 .page-id-220 .entry-content {
   margin-left: 2rem;
-  width: 70vh; }
+  width: 66vh; }
   @media screen and (min-width: 1080px) {
     .page-id-220 .entry-content {
       margin-left: 5rem;
       margin-right: 5rem; } }
+
+.page-id-220 .entry-header {
+  padding-left: 0; }
+
+.page-id-220 .footer {
+  padding-left: 0.1rem; }
+
+.page-id-220 input {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.page-id-220 input.submit-quote {
+  margin-bottom: 4rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-left: 0; }
+
+.page-id-220 .navigation-menu {
+  padding-left: 1rem; }
+
+.page-id-220 h4.copy-right {
+  padding-left: 2rem;
+  left: 0; }
+  @media screen and (min-width: 600px) {
+    .page-id-220 h4.copy-right {
+      padding-left: 1rem; } }
 
 .page-id-210 .entry-header, .page-id-210 .post-archives h2, .page-id-210 ul {
   margin: 0;
@@ -774,6 +813,8 @@ form {
   .page-id-210 .entry-content a {
     padding-top: 0.5rem;
     font-size: 1.25rem !important; }
+    .page-id-210 .entry-content a:hover {
+      color: #006600; }
 
 .page-id-210 .navigation-menu {
   padding-left: 1rem; }
@@ -838,6 +879,8 @@ form {
 .search-results .content-area a, nav.number-pagination a, nav.number-pagination span {
   text-decoration: none;
   color: #00cc00; }
+  .search-results .content-area a:hover, nav.number-pagination a:hover, nav.number-pagination span:hover {
+    color: #006600; }
 
 /*
 .category, .tag{
