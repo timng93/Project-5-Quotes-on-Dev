@@ -768,10 +768,14 @@ form {
 .page-id-220 .entry-content {
   margin-left: 2rem;
   width: 66vh; }
+  @media screen and (min-width: 600px) {
+    .page-id-220 .entry-content {
+      width: 75vh; } }
   @media screen and (min-width: 1080px) {
     .page-id-220 .entry-content {
       margin-left: 5rem;
-      margin-right: 5rem; } }
+      margin-right: 5rem;
+      width: 100vh; } }
 
 .page-id-220 .entry-header {
   padding-left: 0; }
@@ -839,7 +843,7 @@ form {
   border-bottom: 1px dashed #ffffff;
   width: 100%; }
 
-.category-archive {
+.category-archive, .search-archive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }

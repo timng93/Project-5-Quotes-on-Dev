@@ -308,7 +308,7 @@ form{
   width: 66vh;
   @media screen and (min-width: $break-small) {
     width: 75vh;
-
+  }
 
   @media screen and (min-width: $break-large) {
 	margin-left: 5rem;
@@ -412,7 +412,7 @@ form{
   }
 }
 
-.category-archive{
+.category-archive, .search-archive{
   display: flex;
 }
 
@@ -504,4 +504,6 @@ button.search-submit{
     bottom: 4rem;
     
 }
+
+
 

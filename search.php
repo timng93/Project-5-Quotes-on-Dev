@@ -7,8 +7,14 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<div class="search-archive">
+		<div class="icon-left">
+<i class="fas fa-quote-left"></i>
+</div>
+		
+        <div class="entry-post">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -30,8 +36,14 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+	</div>
+
+		<div class="icon-right">
+<i class="fas fa-quote-right"></i>
+</div>
+</div>
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
+	</div><!-- #primary -->
 
 <?php get_footer(); ?>
