@@ -71,9 +71,9 @@ get_header(); ?>
 
                 <?php else: ?>
 
-                <p>Excuse me, you must be logged in to submit the quote</p>
+                <p>Sorry, you must be logged in to submit the quote</p>
 
-                <p><?php echo sprintf( '<a href="%1s">%2s</a>', esc_url( wp_login_url() ),'Click here to log in.' );?>
+                <p class="log-in-message"><?php echo sprintf( '<a href="%1s">%2s</a>', esc_url( wp_login_url() ),'Click here to log in.' );?>
 
                 <?php endif; ?>
 </div>

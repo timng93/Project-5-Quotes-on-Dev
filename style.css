@@ -968,6 +968,9 @@ nav.number-pagination {
 .single .single-post, .home .single-post {
   padding-left: 1rem; }
 
+p.log-in-message {
+  padding-bottom: 7rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
