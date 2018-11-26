@@ -386,12 +386,6 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a:focus, a:active {
-  color: midnightblue; }
-
-a:focus {
-  outline: thin dotted; }
-
 a:hover, a:active {
   outline: 0; }
 
@@ -570,8 +564,7 @@ h2.entry-title {
   margin: 0; }
 
 .page-template-default .entry-header, .error404 h1.page-title {
-  text-align: left;
-  padding-left: 1rem; }
+  text-align: left; }
 
 span.source a {
   color: #00cc00;
@@ -625,8 +618,7 @@ input, textarea {
   padding-left: 0; }
 
 h4.copy-right {
-  position: relative;
-  left: 4%; }
+  padding-left: 1rem; }
   @media screen and (min-width: 600px) {
     h4.copy-right {
       margin: 0; } }
@@ -636,9 +628,6 @@ h4.copy-right a {
   color: #00cc00; }
   h4.copy-right a:hover {
     color: #006600; }
-
-article {
-  padding-left: 1rem; }
 
 .footer {
   display: -webkit-box;
@@ -698,6 +687,14 @@ i.fa-search {
   font-size: 1rem;
   padding: 1rem;
   margin: 0; }
+
+@media screen and (min-width: 1080px) {
+  .error404 .entry-content {
+    padding-left: 3rem; }
+  .error404 .icon-left {
+    margin-left: 9rem; }
+  .error404 .icon-right {
+    margin-right: 7rem; } }
 
 fieldset {
   border: none; }
@@ -766,7 +763,7 @@ form {
               justify-content: center; } }
 
 .page-id-220 .entry-content {
-  margin-left: 2rem;
+  margin-left: 1rem;
   width: 66vh; }
   @media screen and (min-width: 600px) {
     .page-id-220 .entry-content {
@@ -793,22 +790,19 @@ form {
   padding-bottom: 0.75rem;
   margin-left: 0; }
 
-.page-id-220 .navigation-menu {
-  padding-left: 1rem; }
+.page-id-220 h3 {
+  padding-bottom: 6rem;
+  padding-top: 2rem; }
 
 .page-id-220 h4.copy-right {
-  padding-left: 2rem;
-  left: 0; }
-  @media screen and (min-width: 600px) {
-    .page-id-220 h4.copy-right {
-      padding-left: 1rem; } }
+  padding-left: 1rem; }
 
 .page-id-210 .entry-header, .page-id-210 .post-archives h2, .page-id-210 ul {
   margin: 0;
   padding: 0; }
 
 .page-id-210 .entry-content {
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-bottom: 3rem; }
   @media screen and (min-width: 1080px) {
     .page-id-210 .entry-content {
@@ -820,12 +814,9 @@ form {
     .page-id-210 .entry-content a:hover {
       color: #006600; }
 
-.page-id-210 .navigation-menu {
-  padding-left: 1rem; }
-
 .page-id-210 h4.copy-right {
   left: 0;
-  padding-left: 2rem; }
+  padding-left: 1rem; }
 
 .page-id-210 .post-archives h2 {
   padding-top: 1rem;
@@ -863,22 +854,26 @@ form {
       left: 5rem;
       margin-left: 0; } }
 
-.page-id-208 .footer {
+.page-id-208 .single-post {
   padding-left: 1rem; }
-
-@media screen and (min-width: 1080px) {
-  .page-id-208 .single-post {
-    margin-left: 7rem;
-    margin-right: 10rem; } }
+  @media screen and (min-width: 1080px) {
+    .page-id-208 .single-post {
+      margin-left: 7rem;
+      margin-right: 10rem; } }
 
 @media screen and (min-width: 1080px) {
   .page-id-208 .entry-content {
-    padding-left: 2rem; } }
+    padding-left: 5rem;
+    padding-right: 3rem; } }
 
 .quote-submission {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.quote-submission-wrapper h3 {
+  text-align: left;
+  padding-bottom: 10rem; }
 
 .search-results .content-area a, nav.number-pagination a, nav.number-pagination span {
   text-decoration: none;
@@ -935,13 +930,16 @@ button.search-submit {
 nav.number-pagination {
   padding-left: 1rem;
   padding-top: 1rem; }
+  nav.number-pagination a {
+    padding-right: 0.5rem; }
   nav.number-pagination span.current {
-    color: #fff; }
+    color: #fff;
+    padding-right: 0.5rem; }
 
 @media screen and (min-width: 1080px) {
-  .search-results .icon-left {
+  .search-results .icon-left, .page-id-220 .icon-left, .category .icon-left, .tag .icon-left {
     padding-left: 7rem; }
-  .search-results .icon-right {
+  .search-results .icon-right, .page-id-220 .icon-right, .category .icon-right, .tag .icon-right {
     padding-right: 8rem; } }
 
 /*--------------------------------------------------------------

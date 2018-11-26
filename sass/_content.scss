@@ -65,7 +65,7 @@ a:hover{
 
   .page-template-default .entry-header, .error404 h1.page-title{
 	text-align: left;
-    padding-left: 1rem;
+   
   }
 
   span.source a {
@@ -145,8 +145,8 @@ span.source{
 }
 
   h4.copy-right {
-    position: relative;
-    left: 4%;
+    padding-left: 1rem;
+    ;
     @media screen and (min-width: $break-small) {
       margin: 0;
     }
@@ -160,9 +160,7 @@ span.source{
     }
   }
 
-  article {
-    padding-left: 1rem;
-  }
+  
 
   .footer {
     display: flex;
@@ -216,12 +214,24 @@ span.source{
 }
   }
 
-  .error404 .page-content p{
+  .error404 {.page-content p{
     font-size: 1rem;
     padding: 1rem;
     margin: 0;
+  }
+  @media screen and (min-width: $break-large) {
+  .entry-content{
+    padding-left: 3rem;
+  }
+  .icon-left{
+    margin-left: 9rem;
+  }
+  .icon-right{
+    margin-right:7rem;
+  }
 
   }
+}
 
   fieldset{
     border: none;
@@ -304,7 +314,7 @@ form{
 }
 
 .page-id-220 .entry-content{
-  margin-left: 2rem;
+  margin-left: 1rem;
   width: 66vh;
   @media screen and (min-width: $break-small) {
     width: 75vh;
@@ -331,28 +341,26 @@ form{
     margin-bottom: 1rem;
 }
 
-.page-id-220 input.submit-quote{
+.page-id-220 {
+  input.submit-quote{
   margin-bottom: 4rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     margin-left: 0;
 }
-
-.page-id-220 .navigation-menu{
-  padding-left: 1rem;
+  h3{
+    padding-bottom: 6rem;
+    padding-top: 2rem;
 }
+ 
+  }
+
+
+
 
 .page-id-220 h4.copy-right{
-  padding-left: 2rem;
-  left:0;
-  @media screen and (min-width: $break-small) {
-    padding-left: 1rem;
-
+  padding-left: 1rem;
 }
-}
-
-
-
 
 .page-id-210 {
   .entry-header, .post-archives h2, ul{
@@ -362,7 +370,7 @@ form{
 }
 
 .page-id-210 .entry-content{
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-bottom: 3rem;
   @media screen and (min-width: $break-large) {
   padding-left: 3rem;
@@ -377,13 +385,11 @@ form{
 }
 }
 
-.page-id-210 .navigation-menu{
-  padding-left: 1rem;
-}
+
 
 .page-id-210 h4.copy-right{
   left:0;
-  padding-left: 2rem
+  padding-left: 1rem
 }
 
 
@@ -440,26 +446,35 @@ form{
   }
 }
 
-.page-id-208 .footer{
-  padding-left: 1rem;
-}
 
-.page-id-208 .single-post{
+
+.page-id-208 {.single-post{
+  padding-left: 1rem;
   @media screen and (min-width: $break-large) {
     margin-left: 7rem;
     margin-right: 10rem;
   }
-
 }
-
-.page-id-208 .entry-content{
+.entry-content{
   @media screen and (min-width: $break-large) {
-    padding-left: 2rem;
-  }
+  padding-left: 5rem;
+  padding-right: 3rem;
 }
+}
+}
+  
+  
+
+
+
+
 
 .quote-submission{
   display: flex;
+}
+.quote-submission-wrapper h3{
+text-align: left;
+padding-bottom: 10rem;
 }
 
 .search-results .content-area a, nav.number-pagination a, nav.number-pagination span{
@@ -530,14 +545,17 @@ h4.copy-right{
 nav.number-pagination{
   padding-left: 1rem;
     padding-top: 1rem;
+a{
+  padding-right: 0.5rem;
+}
 span.current{
   color: #fff;
-
+  padding-right: 0.5rem;
 }
 
 }
 
-.search-results {
+.search-results, .page-id-220, .category, .tag{
 @media screen and (min-width: $break-large) {
 
   .icon-left{
