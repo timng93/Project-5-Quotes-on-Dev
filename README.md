@@ -1,23 +1,31 @@
-# Quotes on Dev Starter
+# Quotes 
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+A WordPress theme built by Tim Nguyen
 
 ## Installation
 
-### 1. Download me (don't clone me!)
+### 1. Require SQL Database File
 
-Then add me to your `wp-content/themes` directory.
+### 2. MAMP is running
 
-### 2. Rename the `quotesondev-starter-master` directory
+### 3. Access to Wordpress and Gulp is running
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+## Built with
 
-### 3. Install the dev dependencies
+#### MAMP
+#### Wordpress
+#### Wordpress Rest API
+#### Gulp
+#### Visual Studio Code
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
+## 
+## Author
 
-### 4. Update the proxy in `gulpfile.js`
+Tim Nguyen
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+## Personal learning
 
-And now would be a good time to `git init` :)
+Learn to build WordPress theme on multiple pages following Wordpress Template Hierachy. Build theme that is responsive to Mobile, Tablet and Desktop Devices from Mobile first. Learn how to get data from Wordpress Rest API and maneuveur different functions of Wordpress. 
+
+
+
