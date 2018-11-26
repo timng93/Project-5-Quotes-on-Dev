@@ -12,7 +12,7 @@
 <div class="icon-left">
 <i class="fas fa-quote-left"></i>
 </div>
-<div class="entry-content">
+<div class="content-page">
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

@@ -21,12 +21,6 @@
   display: inline;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: $base__space-unit 0 0;
-}
-
 .page-links {
   clear: both;
   margin: 0 0 $base__space-unit;
@@ -218,6 +212,9 @@ span.source{
     font-size: 1rem;
     padding: 1rem;
     margin: 0;
+  }
+  h1.page-title{
+    padding-left: 1rem;
   }
   @media screen and (min-width: $break-large) {
   .entry-content{
@@ -414,8 +411,20 @@ form{
   .single-post{
     border-bottom: 1px dashed #ffffff;
     width: 100%;
-
   }
+  .border-top{
+    @media screen and (min-width: $break-large) {
+    margin-left: 4rem;
+  }
+}
+  nav.number-pagination{
+    padding-left: 0;
+    @media screen and (min-width: $break-large) {
+      padding-left: 4rem;
+    }
+  
+  }
+  
 }
 
 .category-archive, .search-archive{
@@ -425,25 +434,28 @@ form{
 
 .category, .tag{
 
+.entry-post{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+.icon-right{
+  @media screen and (min-width: $break-large) {
+
+  margin-left: 5rem;
+}
+}
  .single-post{
   flex-direction: column;
+  padding-bottom: 1rem;
+  
+}
+.page-title{
+  @media screen and (min-width: $break-large) {
+    padding-left: 4rem;
 }
 }
-
-.category, .tag{
-
-  .page-header{
-    position: relative;
-    
-    border-bottom: 1px dashed #ffffff;
-    
-    margin-left: 1rem;
-
-    @media screen and (min-width: $break-large) {
-    left: 5rem;
-    margin-left:0;
-}
-  }
 }
 
 
@@ -455,20 +467,18 @@ form{
     margin-right: 10rem;
   }
 }
-.entry-content{
+.icon-left{
+  @media screen and (min-width: $break-large) {
+    padding-right: 3rem;
+}
+}
+.icon-right{
   @media screen and (min-width: $break-large) {
   padding-left: 5rem;
-  padding-right: 3rem;
 }
 }
 }
   
-  
-
-
-
-
-
 .quote-submission{
   display: flex;
 }
@@ -521,12 +531,17 @@ button.search-submit{
 
 .search-results {
     h1.page-title{
-  padding-left: 1rem;  
     padding-bottom: 1rem;
+}
+.icon-left{
+  @media screen and (min-width: $break-large) {
+    margin-right: 2rem;
+}
 }
 
 .entry-post{
   padding-bottom: 4rem;
+  padding-left: 1rem;
  
 }
 h4.copy-right{
@@ -534,10 +549,12 @@ h4.copy-right{
   padding-left: 1rem;
 }
 .border-top{
-  margin-left: 1rem;
   margin-right: 1rem;
   border-top: 1px dashed #ffffff;
   padding-bottom: 2rem;
+}
+nav.number-pagination{
+  padding-left: 0;
 }
 
 }
@@ -568,6 +585,21 @@ span.current{
 
 
   }
+
+  .tag, .category{
+    .border-top{
+      border-top:
+      1px dashed #ffffff;
+    }
+  }
+
+  
+.single, .home {
+  .single-post{
+    padding-left: 1rem;
+  }
+}  
+
 
 
  

@@ -246,9 +246,6 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 /* Copy */
-p {
-  margin-bottom: 1.5rem; }
-
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -528,11 +525,6 @@ a:hover, a:active {
 .group-blog .byline {
   display: inline; }
 
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5rem 0 0; }
-
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
@@ -688,6 +680,9 @@ i.fa-search {
   padding: 1rem;
   margin: 0; }
 
+.error404 h1.page-title {
+  padding-left: 1rem; }
+
 @media screen and (min-width: 1080px) {
   .error404 .entry-content {
     padding-left: 3rem; }
@@ -834,25 +829,41 @@ form {
   border-bottom: 1px dashed #ffffff;
   width: 100%; }
 
+@media screen and (min-width: 1080px) {
+  .category .border-top, .tag .border-top {
+    margin-left: 4rem; } }
+
+.category nav.number-pagination, .tag nav.number-pagination {
+  padding-left: 0; }
+  @media screen and (min-width: 1080px) {
+    .category nav.number-pagination, .tag nav.number-pagination {
+      padding-left: 4rem; } }
+
 .category-archive, .search-archive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
+.category .entry-post, .tag .entry-post {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  width: 100%; }
+
+@media screen and (min-width: 1080px) {
+  .category .icon-right, .tag .icon-right {
+    margin-left: 5rem; } }
+
 .category .single-post, .tag .single-post {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  padding-bottom: 1rem; }
 
-.category .page-header, .tag .page-header {
-  position: relative;
-  border-bottom: 1px dashed #ffffff;
-  margin-left: 1rem; }
-  @media screen and (min-width: 1080px) {
-    .category .page-header, .tag .page-header {
-      left: 5rem;
-      margin-left: 0; } }
+@media screen and (min-width: 1080px) {
+  .category .page-title, .tag .page-title {
+    padding-left: 4rem; } }
 
 .page-id-208 .single-post {
   padding-left: 1rem; }
@@ -862,9 +873,12 @@ form {
       margin-right: 10rem; } }
 
 @media screen and (min-width: 1080px) {
-  .page-id-208 .entry-content {
-    padding-left: 5rem;
+  .page-id-208 .icon-left {
     padding-right: 3rem; } }
+
+@media screen and (min-width: 1080px) {
+  .page-id-208 .icon-right {
+    padding-left: 5rem; } }
 
 .quote-submission {
   display: -webkit-box;
@@ -911,21 +925,27 @@ button.search-submit {
   bottom: 4rem; }
 
 .search-results h1.page-title {
-  padding-left: 1rem;
   padding-bottom: 1rem; }
 
+@media screen and (min-width: 1080px) {
+  .search-results .icon-left {
+    margin-right: 2rem; } }
+
 .search-results .entry-post {
-  padding-bottom: 4rem; }
+  padding-bottom: 4rem;
+  padding-left: 1rem; }
 
 .search-results h4.copy-right {
   left: 0;
   padding-left: 1rem; }
 
 .search-results .border-top {
-  margin-left: 1rem;
   margin-right: 1rem;
   border-top: 1px dashed #ffffff;
   padding-bottom: 2rem; }
+
+.search-results nav.number-pagination {
+  padding-left: 0; }
 
 nav.number-pagination {
   padding-left: 1rem;
@@ -941,6 +961,12 @@ nav.number-pagination {
     padding-left: 7rem; }
   .search-results .icon-right, .page-id-220 .icon-right, .category .icon-right, .tag .icon-right {
     padding-right: 8rem; } }
+
+.tag .border-top, .category .border-top {
+  border-top: 1px dashed #ffffff; }
+
+.single .single-post, .home .single-post {
+  padding-left: 1rem; }
 
 /*--------------------------------------------------------------
 # Media
