@@ -555,7 +555,7 @@ a:hover {
 
 .site-branding {
   text-align: left;
-  padding: 1rem;
+  padding-top: 2rem;
   background-color: #222222;
   font-size: 1rem; }
   @media screen and (min-width: 1080px) {
@@ -914,6 +914,35 @@ button.search-submit {
 .error404 fieldset {
   position: relative;
   bottom: 4rem; }
+
+.search-results h1.page-title {
+  padding-left: 1rem;
+  padding-bottom: 1rem; }
+
+.search-results .entry-post {
+  padding-bottom: 4rem; }
+
+.search-results h4.copy-right {
+  left: 0;
+  padding-left: 1rem; }
+
+.search-results .border-top {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-top: 1px dashed #ffffff;
+  padding-bottom: 2rem; }
+
+nav.number-pagination {
+  padding-left: 1rem;
+  padding-top: 1rem; }
+  nav.number-pagination span.current {
+    color: #fff; }
+
+@media screen and (min-width: 1080px) {
+  .search-results .icon-left {
+    padding-left: 7rem; }
+  .search-results .icon-right {
+    padding-right: 8rem; } }
 
 /*--------------------------------------------------------------
 # Media
