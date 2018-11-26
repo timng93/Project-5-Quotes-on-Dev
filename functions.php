@@ -1,10 +1,10 @@
 <?php
 /**
- * Quotes on Dev Theme functions and definitions.
+ * Quotes Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package QOD_Starter_Theme
+ * @package Quotes
  */
 
 if ( ! function_exists( 'qod_setup' ) ) :

@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package QOD_Starter_Theme
+ * @package Quotes
  */
 
 ?><!DOCTYPE html>
@@ -22,7 +22,7 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-				<a href="http://localhost:8888/quotesondev/" rel="homepage">
+				<a href="<?php echo get_home_url(); ?>" rel="home-page">
 								<img src="<?php echo get_template_directory_uri();?>/assets/qod-logo.svg" alt="qod-logo"/>
 								</a>
 

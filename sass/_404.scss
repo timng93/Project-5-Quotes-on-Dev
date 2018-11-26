@@ -1,0 +1,39 @@
+.page-id-220, .error404{
+    .single-post{
+   display: flex;
+   justify-content: start;
+   @media screen and (min-width: $break-large) {
+     justify-content: center;
+   }
+ }
+ }
+
+ .error404 {.page-content p{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+  }
+  h1.page-title{
+    padding-left: 1rem;
+  }
+  @media screen and (min-width: $break-large) {
+  .entry-content{
+    padding-left: 3rem;
+  }
+  .icon-left{
+    margin-left: 9rem;
+  }
+  .icon-right{
+    margin-right:7rem;
+  }
+  }
+}
+
+.page-template-default .entry-header, .error404 h1.page-title{
+	text-align: left;
+  }
+
+  .error404 fieldset{
+    position: relative;
+      bottom: 4rem;   
+  }

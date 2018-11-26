@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer.
  *
- * @package QOD_Starter_Theme
+ * @package Quotes
  */
 
 ?>
@@ -17,7 +17,7 @@
 
 				</nav><!-- #site-navigation -->
 				<div class="copyright-info">
-				<h4 class="copy-right">Brought to you by <a href="https://redacademy.com/vancouver/" rel="linkpage"><span class="link-page">RED Academy</span></a></h4>
+				<h4 class="copy-right">Brought to you by <a href="https://redacademy.com/vancouver/" rel="link-page"><span class="link-page">RED Academy</span></a></h4>
 </div>
 
 </div>

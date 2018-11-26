@@ -4,4 +4,104 @@
 
 /* All Archives Page */
 
+.category, .tag{
+    .single-post{
+      border-bottom: 1px dashed $color__font-color;
+      width: 100%;
+    }
+    .border-top{
+      @media screen and (min-width: $break-large) {
+      margin-left: 4rem;
+    }
+  }
+    nav.number-pagination{
+      padding-left: 0;
+      @media screen and (min-width: $break-large) {
+        padding-left: 4rem;
+      }
+    }
+  }
+
+  .category-archive, .search-archive{
+    display: flex;
+  }
+  
+  
+  .category, .tag{
+  
+  .entry-post{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+    width: 100%;
+  }
+  .icon-right{
+    @media screen and (min-width: $break-large) {
+  
+    margin-left: 5rem;
+  }
+  }
+   .single-post{
+    flex-direction: column;
+    padding-bottom: 1rem;
+    
+  }
+  .page-title{
+    @media screen and (min-width: $break-large) {
+      padding-left: 4rem;
+  }
+  }
+  }  
+
+  .tag, .category{
+    .border-top{
+      border-top:
+      1px dashed $color__font-color;
+    }
+  }
+
 /* Submit a Quote Page */
+.page-id-220 .entry-content{
+    margin-left: 1rem;
+    width: 66vh;
+    @media screen and (min-width: $break-small) {
+      width: 75vh;
+    }
+  
+    @media screen and (min-width: $break-large) {
+      margin-left: 5rem;
+      margin-right: 5rem;
+      width: 100vh;
+    }
+  }
+
+  .page-id-220 .footer{
+    padding-left: 0.1rem;
+  
+  }
+  
+  .page-id-220 input{
+    margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+  
+  .page-id-220 {
+    input.submit-quote{
+    margin-bottom: 4rem;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      margin-left: 0;
+  }
+    h3{
+      padding-bottom: 6rem;
+      padding-top: 2rem;
+  }
+    }
+
+    .quote-submission{
+        display: flex;
+      }
+      .quote-submission-wrapper h3{
+      text-align: left;
+      padding-bottom: 10rem;
+      }

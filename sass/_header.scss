@@ -1,0 +1,20 @@
+.site-branding {
+    text-align: left;
+    padding-top: 2rem;
+    background-color: $color__background-body;
+    font-size: 1rem;
+    @media screen and (min-width: $break-large) {
+      text-align: center;
+      p {
+        display: none;
+      }
+    }
+  }
+
+  img{
+	width: 60%;
+}
+
+.page-id-220 .entry-header{
+    padding-left: 0;
+  }

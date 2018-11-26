@@ -1,0 +1,42 @@
+.page-id-210 .entry-content{
+    text-align: left;
+  }
+
+  .page-id-210 {
+    .entry-header, .post-archives h2, ul{
+      margin:0;
+      padding: 0;
+    }
+  }
+  
+  .page-id-210 .entry-content{
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+    @media screen and (min-width: $break-large) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    }
+    a{
+    padding-top: 0.5rem;
+    font-size: 1.25rem !important;
+    &:hover{
+      color: $color__text-hover;
+    } 
+  }
+  }
+  
+  .page-id-210 .post-archives h2{
+  
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .page-id-210 .single-post{
+    margin-left: 0;
+    margin-right: 0;
+    @media screen and (min-width: $break-large) {
+  
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  }

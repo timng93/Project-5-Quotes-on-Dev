@@ -1,0 +1,22 @@
+.page-template-default .entry-content p{
+    font-size: 1.2rem;
+}
+
+.page-id-208 {.single-post{
+padding-left: 1rem;
+@media screen and (min-width: $break-large) {
+  margin-left: 7rem;
+  margin-right: 10rem;
+}
+}
+.icon-left{
+@media screen and (min-width: $break-large) {
+  padding-right: 3rem;
+}
+}
+.icon-right{
+@media screen and (min-width: $break-large) {
+padding-left: 5rem;
+}
+}
+}
