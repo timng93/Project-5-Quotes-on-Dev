@@ -68,10 +68,13 @@ function qod_scripts() {
 //TODO try to add a localized script
 
    wp_enqueue_script( 'qod-custom-js', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery'), '', true );
-   $script_url = get_template_directory_uri() . '/scripts.js';
+   
+//    $script_url = get_template_directory_uri() . '/scripts.js';
    wp_enqueue_script( 'jquery' );
-   wp_enqueue_script( 'qod_api', $script_url, array( 'jquery' ), false, true );
-   wp_localize_script( 'qod_api', 'qod_vars', array(
+
+//    wp_enqueue_script( 'qod_api', $script_url, array( 'jquery' ), false, true );
+
+   wp_localize_script( 'qod-custom-js', 'qod_vars', array(
      'rest_url' => esc_url_raw( rest_url() ),
      'home_url' => esc_url_raw( home_url() ),
      'nonce' => wp_create_nonce( 'wp_rest' ),

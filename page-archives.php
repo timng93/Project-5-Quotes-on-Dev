@@ -72,6 +72,7 @@ get_header(); ?>
         <div class="icon-right">
 	<i class="fas fa-quote-right"></i>
 </div>
+</div>
         </section>
 
 		</main><!-- #main -->

@@ -38,12 +38,12 @@ get_header(); ?>
                     <label for = "quote-content"> Quote </label>
 </div>
                         <div>
-                    <textarea name="quote_content" id="quote-content" rows="3" columns="20"></textarea>
+                    <textarea name="quote_content" id="quote-content" rows="3" cols="20"></textarea>
 
                        </div>
 
                        <div>
-                    <label for="">Where did you find this quote? (e.g. book name)
+                    <label for="quote-source">Where did you find this quote? (e.g. book name)
 </label>
 </div>
                   <div>
@@ -52,7 +52,7 @@ get_header(); ?>
                        </div>
 
                        <div>
-                    <label for="">Provide the URL of the quote source, if available. </label>
+                    <label>Provide the URL of the quote source, if available. </label>
 </div>
                     <div>
                     <input type="url" name="quote_source_url" id="quote-source-url">
@@ -81,7 +81,7 @@ get_header(); ?>
 	<i class="fas fa-quote-right"></i>
 </div>
 
-</div>
+
             </section>
 
 		</main><!-- #main -->
