@@ -10,16 +10,16 @@
 
  .error404 {.page-content p{
     font-size: 1rem;
-    padding: 1rem;
+    padding: 0 1rem;
     margin: 0;
   }
+
   h1.page-title{
     padding-left: 1rem;
   }
   @media screen and (min-width: $break-large) {
   .entry-content{
-    position: relative;
-    left: -3rem;
+    width: 725px;
   }
   .icon-left{
     position: relative;
@@ -37,7 +37,4 @@
 	text-align: left;
   }
 
-  .error404 fieldset{
-    position: relative;
-      bottom: 4rem;   
-  }
+  

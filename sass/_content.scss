@@ -28,6 +28,15 @@
 
 /*Global*/
 
+.icon-left{ position: relative;
+left: -4rem;
+}
+
+.icon-right{position: relative;
+  right: -2rem;
+
+}
+
 body {
   background-color: $color__background-body;
   color: $color__font-color;
@@ -42,12 +51,13 @@ a:hover{
 
   h2.entry-title{
     font-weight: normal;
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	margin: 0;
   }
 
   span.source {
     font-style: italic;
+    font-size: 1.25rem;
     a {
     color: $color__text-brand;
     font-style: italic;
@@ -75,11 +85,16 @@ input, textarea{
 }
 
 .entry-content {p {
-  line-height: 3rem;
-  font-size: 1.2rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  @media screen and (min-width: $break-small) {
+    font-size: 1.75rem;
+    
+    
+  }
   @media screen and (min-width: $break-large) {
-  font-size: 1.7rem;
-  width: 100vh;
+  font-size: 2.5rem;
+  
   text-align:left;
 }
 }    a{
@@ -105,8 +120,7 @@ fieldset{
 
   .entry-post{
     @media screen and (min-width: $break-large) {
-    padding-left: 3rem;
-    padding-right: 7rem;
+    width: 725px;
     }
   }
     
@@ -147,16 +161,16 @@ fieldset{
     h1.page-title{
     padding-bottom: 1rem;
 }
-.icon-left{
-  @media screen and (min-width: $break-large) {
-    margin-right: 2rem;
-}
-}
+
 
 .entry-post{
   padding-bottom: 4rem;
   padding-left: 1rem;
+  @media screen and (min-width: $break-large) {
+  width: 725px;
 }
+}
+
 h4.copy-right{
   left: 0;
   padding-left: 1rem;

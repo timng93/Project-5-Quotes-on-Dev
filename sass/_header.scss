@@ -12,9 +12,14 @@
   }
 
   img{
-	width: 60%;
+  width: 325px;
+  @media screen and (min-width: $break-small) {
+    width: 525px;
+  }
+    @media screen and (min-width: $break-large) {
+      width: 725px;
 }
-
+  }
 .page-id-220 .entry-header{
     padding-left: 0;
   }

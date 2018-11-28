@@ -23,17 +23,23 @@
   }
 
   .category-archive, .search-archive{
+    @media screen and (min-width: $break-large) {
     display: flex;
+    justify-content: center;
   }
-  
+}
   
   .category, .tag{
   
   .entry-post{
     padding-left: 1rem;
-    padding-right: 1rem;
     padding-bottom: 4rem;
-    width: 100%;
+    
+}
+  .icon-left{
+    @media screen and (min-width: $break-large) {
+      left: 0;
+    }
   }
   .icon-right{
     @media screen and (min-width: $break-large) {
@@ -59,6 +65,15 @@
       1px dashed $color__font-color;
     }
   }
+
+  .category, .tag{
+  
+    .entry-post{
+      @media screen and (min-width: $break-large) {
+    width: 720px;
+    }
+  }
+}
 
 /* Submit a Quote Page */
 .page-id-220 .entry-content{
