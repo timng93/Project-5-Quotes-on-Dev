@@ -18,14 +18,18 @@
   }
   @media screen and (min-width: $break-large) {
   .entry-content{
-    padding-left: 3rem;
+    position: relative;
+    left: -3rem;
   }
   .icon-left{
-    margin-left: 9rem;
-  }
-  .icon-right{
-    margin-right:7rem;
-  }
+    position: relative;
+    left: -4rem;
+}
+.icon-right{
+  position: relative;
+  left: 5rem;
+}
+  
   }
 }
 

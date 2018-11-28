@@ -2,7 +2,6 @@
   $(function() {
 
     let lastPage = '';
-    console.log(qod_vars);
 
 
     $('#new-quote-button').on('click', function(event) {
@@ -42,11 +41,12 @@
 
 
           }
-          console.log(data);
+       
         })
         .fail(function(err) {
+          $('.source').append("");
+
           
-          console.log(err);
         });
     }
     //end of Get Quote
@@ -74,21 +74,18 @@
 
                const quoteURL = $('#quote-source-url').val();
               
+              const JSONValue = {
+                'title': quoteTitle,
+                'content': quoteContent,
+                  '_qod_quote_source': quoteSource,
+                  '_qod_quote_source_url': quoteURL,
+                  status: 'publish',
+
+              };
                $.ajax({
                  method: 'POST',
                  url: qod_vars.rest_url + 'wp/v2/posts',
-                 data: {
-
-                 
-                  title: quoteTitle,
-                  content: quoteContent,
-                  _qod_quote_source: quoteSource,
-                  _qod_quote_source_url: quoteURL,
-                  status: 'pending',
-
-                 
-
-                 },
+                 data: JSONValue,
                  beforeSend: function (xhr) {
 
                   xhr.setRequestHeader( 'X-WP-Nonce', qod_vars.nonce );
@@ -98,18 +95,16 @@
 
                }).done(function(){
 
-                console.log('response');
 
                 $( "#quote-submission-form" ).slideUp( "slow");
-                $('.quote-submission-wrapper').append(`<h3> Your quote was submitted successfully </h3>`);
+                $('.quote-submission-wrapper').append('<h3>'+ qod_vars.success + '</h3>');
 
                }).fail(function(){
                  
-                console.log('fail');
 
                 $( "#quote-submission-form" ).slideUp( "slow");
 
-                $('.quote-submission-wrapper').append(`<h3> Oops! You want to submit your quote again? </h3>`);
+                $('.quote-submission-wrapper').append('<h3>'+ qod_vars.failure + '</h3>');
                });
              }
 
