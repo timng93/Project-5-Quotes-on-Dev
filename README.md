@@ -7,9 +7,9 @@ A WordPress theme built by Tim Nguyen
 
 <img src="screenshots/desktop.png" width="1200" height="600">
 
-<img src="screenshots/tablet.png" width="700" height="400">
+<img src="screenshots/tablet.png" width="800" height="480">
 
-<img src="screenshots/mobile.png" width="500" height="300">
+<img src="screenshots/mobile.png" width="480" height="320">
 
 ## Installation
 

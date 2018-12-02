@@ -6,7 +6,6 @@
  */
 
 ?>
-
 			</div><!-- #content -->
 			<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="footer">
@@ -21,12 +20,7 @@
 				<!-- #site-navigation -->
 				<div class="copyright-info">
 				<h4 class="copy-right">Brought to you by <a href="https://redacademy.com/vancouver/"><span class="link-page">RED Academy</span></a></h4>
-</div>
-
-
-					                     
-
-				
+</div>			
 				<!-- .site-info -->
 			
 			</div>
