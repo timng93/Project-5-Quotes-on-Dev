@@ -1,33 +1,39 @@
 # Quotes 
 
-A WordPress theme built by Tim Nguyen
+A WordPress theme built by Tim Nguyen. Quotes is the showcase for quotes regarding Computer Development. User can view quote or submit a quote as desired.
 
 
 ## Screenshots
 
+Desktop
+
 <img src="screenshots/desktop.png" width="1200" height="600">
 
-<img src="screenshots/tablet.png" width="800" height="480">
+Tablet 
 
-<img src="screenshots/mobile.png" width="480" height="320">
+<img src="screenshots/tablet.png" width="500" height="600">
+
+Mobile
+
+<img src="screenshots/mobile.png" width="300" height="600">
 
 ## Installation
 
-### 1. Require SQL Database File
+ 1. Require SQL Database File
 
-### 2. MAMP is running
+2. MAMP is running
 
-### 3. Access to Wordpress and Gulp is running
+3. Access to Wordpress and Gulp is running
 
 ## Built with
 
-#### MAMP
-#### Wordpress
-#### Wordpress Rest API
-#### Gulp
-#### Visual Studio Code
+MAMP
+Wordpress
+Wordpress Rest API
+Gulp
+Visual Studio Code
 
-## 
+
 ## Author
 
 Tim Nguyen
